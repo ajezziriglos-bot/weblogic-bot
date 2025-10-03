@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtualenv
+.venv/
+venv/
+
+# Editor/OS
+.vscode/
+*.swp
+.DS_Store
+
+# App data
+data/chroma/
+data/uploads/
+logs/
+.cache/
+
+# Secrets
+.env
+.env.*.local
+
+# Ollama cache (si lo llegaras a ubicar localmente)
+ollama/

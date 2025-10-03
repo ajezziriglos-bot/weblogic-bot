@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+httpx
+pydantic-settings
+chromadb>=0.5.0
+pypdf
+# Opcional: embeddings livianos
+sentence-transformers
