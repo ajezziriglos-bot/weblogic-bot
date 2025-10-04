@@ -44,8 +44,9 @@ cp .env.example .env   # edit if needed
 python -m src.ingest
 
 # Run API
+export EMBED_BACKEND=ST
+export ST_MODEL=sentence-transformers/all-MiniLM-L6-v2
 PYTHONPATH=. uvicorn src.server:app --host 0.0.0.0 --port 8000 --reload
-
 
 Test it
 
