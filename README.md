@@ -50,9 +50,11 @@ PYTHONPATH=. uvicorn src.server:app --host 0.0.0.0 --port 8000 --reload
 Test it
 
 curl -s http://localhost:8000/health
+
 curl -s -X POST http://localhost:8000/ask \
   -H "Content-Type: application/json" \
-  --data '{"question":"how do I safely restart WebLogic?"}'
+  --data '{"question":"como reinicio un weblogic"}' | jq
+  
 
 Configuration
 
