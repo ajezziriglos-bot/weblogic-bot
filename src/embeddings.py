@@ -7,10 +7,8 @@ from .config import settings
 BACKEND = os.getenv("EMBED_BACKEND", "OLLAMA").upper()
 
 if BACKEND == "ST":
-    # sentence-transformers backend (sin Ollama)
     from sentence_transformers import SentenceTransformer
-
-    _st_model_name = os.getenv("ST_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+    _st_model_name = os.getenv("ST_MODEL", settings.ST_MODEL)
     _st_model = SentenceTransformer(_st_model_name)
 
     class OllamaEmbeddings:

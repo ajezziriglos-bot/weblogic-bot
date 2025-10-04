@@ -5,6 +5,10 @@ from pydantic_settings import BaseSettings  # <- OJO: v2 usa pydantic_settings
 
 class Settings(BaseSettings):
     # -------- Fields (todos tipados) --------
+
+    EMBED_BACKEND: str = "ST"  # "ST" o "OLLAMA"
+    ST_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
+    
     LLM_MODEL: str = "llama3.2:3b"
     EMBED_MODEL: str = "nomic-embed-text"
 
