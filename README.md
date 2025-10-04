@@ -60,16 +60,3 @@ Configuration
 
 WSL tip: for low-RAM environments, set EMBED_BACKEND=ST and LLM_MODEL=llama3.2:3b.
 
-Roadmap
-
- Cite sources in answers
-
- “Actions” mode (Phase 2): safely execute runbook steps with confirmation
-
- Dockerfile/Compose
-
- Basic web UI
-
-License
-
-MIT — see LICENSE.
